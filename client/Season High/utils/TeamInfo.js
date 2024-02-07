@@ -7861,7 +7861,7 @@ export const TeamInfo =
             "turnover": 1
         }
     ],
-    "Trail Blazers": [
+    "Portland Trail Blazers": [
         {
             "id": 14113896,
             "ast": 6,
