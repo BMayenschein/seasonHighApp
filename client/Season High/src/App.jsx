@@ -14,6 +14,7 @@ import { Data } from '../utils/Data'
 import { LineChart } from './components/LineChart';
 
 
+import Header from './components/Head'
 import TeamsList from './components/TeamsList'
 import ChartCtn from './components/ChartCtn'
 
@@ -41,67 +42,11 @@ function App() {
     }
   }
 
-  // const [options, setOptions] = useState(
-  //   {
-  //   responsive: true,
-  //   maintainAspectRatio: false,
-  //   title: {
-  //     display: true,
-  //     text: `Season High Scoring vs the ${team}`
-  //   },
-  //   elements: {
-  //     point: {
-  //       radius: 15,
-  //       pointStyle: Data[team].map((data) => {
-  //         const pointImage = new Image(35, 50);
-  //         const last = data.player.last_name.length > 5 ? data.player.last_name.slice(0, 5).toLowerCase() : data.player.last_name.toLowerCase() 
-  //         const first = data.player.first_name.slice(0,2).toLowerCase()
-  //         pointImage.src = `https://www.basketball-reference.com/req/202106291/images/headshots/jordami01.jpg`
-  //         return pointImage
-  //       })
-  //     }
-  //   },
-  //   scales: {
-  //     y: 
-  //       {
-  //         suggestedMin: 0,
-  //         suggestedMax: 80,
-  //         grid: {
-  //           color: '#ffc0cb',
-  //           tickColor: '#ffc0cb',
-  //           drawTicks: true,
-  //         },
-  //         ticks: {
-  //           backdropColor: '#ffc0cb'
-  //         }
-  //       },
-  //     x: {
-  //       grid: {
-  //         color: '#ffc0cb'
-  //       }
-  //     }
-  //   }
-  // })
-  
-  // const [chartData, setChartData] = useState({
-  //   labels: Data[team].map((data) => `${data.player.first_name}  ${data.player.last_name}`),
-  //   datasets: [
-  //     {
-  //       label: `Season high scoring vs the ${team}`,
-  //       data: Data[team].map((data) => data.pts),
-  //       showLine: false,
-  //       backgroundColor: 'pink',
-  //       color: 'green',
-  //     }
-  //   ]
-  // })
 
-
-  //Linechart => chartData, options
 
   return (
-    // <LineChart chartData={chartData} options={options}/>
     <>
+      <Header />
       <TeamsList handleTeams={ handleTeams } teams={ teams } />
       <ChartCtn teams={ teams } />
     </>

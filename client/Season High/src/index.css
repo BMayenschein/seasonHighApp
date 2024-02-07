@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -54,17 +58,20 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.chart-container, .chartCtn {
+.chart-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80%;
+}
+
+.chartCtn {
+  width: 80vw;
 }
 
 .chart{
   height: 30vh;
   position: relative;
-  width: 100%;
 }
 .teamsList {
   display: flex;
@@ -74,6 +81,7 @@ button:focus-visible {
 
 #root {
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
 }
 
