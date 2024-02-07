@@ -1,6 +1,5 @@
 
 const TeamsList = ({ handleTeams, teams }) => {
-
   const teamNames = [
     "Atlanta Hawks", 
     "Boston Celtics", 
@@ -34,14 +33,16 @@ const TeamsList = ({ handleTeams, teams }) => {
     "Washington Wizards"
   ]
     return (
-      <div className="teamsList">
+      <ul className="menu menu-lg bg-base-200 w-56 rounded-box">
+        <li className="menu-title">Select Teams</li>
         {teamNames.map((team, i) => 
-          <div 
-            key={i}
-            onClick={(e) => handleTeams(team)}
-          >{team}</div>
+          <li key={i} >
+            <a onClick={(e) => handleTeams(team)}>
+              {team}
+            </a>
+          </li>
         )}
-      </div>
+      </ul>
     )
   }
   
