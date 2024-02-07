@@ -54,9 +54,27 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.teamList {
+.chart-container, .chartCtn {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.chart{
+  height: 30vh;
+  position: relative;
+  width: 100%;
+}
+.teamsList {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+}
+
+#root {
+  display: flex;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {
