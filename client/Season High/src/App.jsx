@@ -14,7 +14,8 @@ import { Data } from '../utils/Data'
 import { LineChart } from './components/LineChart';
 
 
-import Teams from './components/Teams'
+import TeamsList from './components/TeamsList'
+import ChartCtn from './components/ChartCtn'
 
 
 ChartJS.register(
@@ -95,9 +96,16 @@ function App() {
   //   ]
   // })
 
+
+  //Linechart => chartData, options
+
   return (
     // <LineChart chartData={chartData} options={options}/>
-    <Teams handleTeams={ handleTeams } teams={ teams } />
+    <>
+      <TeamsList handleTeams={ handleTeams } teams={ teams } />
+      <ChartCtn teams={ teams } />
+    </>
+
   )
 }
 
