@@ -113,15 +113,18 @@ function chartData(team) {
 
 const ChartCtn = ({ teams }) => {
     return (
-        <div className="chartCtn">
-            {teams.map((team, i) => (
-                <div key={i} className="chart-container" style={{position: "relative", height: "40vh", width: "90vw" }}>
-                    <Line
-                        data={chartData(team)}
-                        options={chartOptions(team)}
-                    />
-                </div>
-            ))}
+        <div className="chart-container">
+          <h1 className="charts"> Season High Charts</h1>
+          <div className="chartCtn">
+              {teams.map((team, i) => (
+                  <div key={i} className="chart">
+                      <Line
+                          data={chartData(team)}
+                          options={chartOptions(team)}
+                      />
+                  </div>
+              ))}
+          </div>
         </div>
     )
 
