@@ -38,19 +38,18 @@ function App() {
       setTeams(newTeams)
     }
     else {
-      setTeams([...teams, team])
+      setTeams([team, ...teams])
     }
   }
 
-
-
   return (
     <>
-      <Header />
-      <TeamsList handleTeams={ handleTeams } teams={ teams } />
-      <ChartCtn teams={ teams } />
+      {/* <Header /> */}
+      <div className="flex flex-row">
+        <TeamsList handleTeams={ handleTeams } teams={ teams } />
+        <ChartCtn handleTeams={ handleTeams } teams={ teams } />
+      </div>
     </>
-
   )
 }
 
