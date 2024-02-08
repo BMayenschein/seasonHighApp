@@ -4,9 +4,5 @@
             Hello world!
         </h1>
     )
-
-
-}
-  
-  
-  export default Head
+}  
+export default Head
