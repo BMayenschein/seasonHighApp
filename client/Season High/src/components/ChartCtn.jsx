@@ -9,6 +9,12 @@ function chartOptions(team) {
           display: true,
           text: `Season High Scoring vs the ${team}`
         },
+        layout: {
+          padding: {
+            left: 20,
+            right: 20
+          }
+        },
         elements: {
           point: {
             radius: 15,
