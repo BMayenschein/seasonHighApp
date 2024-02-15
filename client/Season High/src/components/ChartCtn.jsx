@@ -1,5 +1,6 @@
 import { Line } from 'react-chartjs-2';
 import { TeamInfo } from '../../utils/TeamInfo'
+import { TeamInfo2 } from '../../utils/TeamInfo2'
 
 function chartOptions(team) {
     return {
@@ -7,7 +8,7 @@ function chartOptions(team) {
         maintainAspectRatio: false,
         title: {
           display: true,
-          text: `Season High Scoring vs the ${team}`
+          text: `${team}`
         },
         layout: {
           padding: {
@@ -18,9 +19,9 @@ function chartOptions(team) {
         elements: {
           point: {
             radius: 15,
-            pointStyle: TeamInfo[team].map((data) => {
-              const pointImage = new Image(35, 50);
-              pointImage.src = `https://www.basketball-reference.com/req/202106291/images/headshots/jordami01.jpg`
+            pointStyle: TeamInfo2[team].players.map((data) => {
+              const pointImage = new Image(85, 60);
+              pointImage.src = `https://cdn.nba.com/headshots/nba/latest/1040x760/${data.id}.png`
               return pointImage
             })
           }
@@ -31,17 +32,17 @@ function chartOptions(team) {
               suggestedMin: 0,
               suggestedMax: 80,
               grid: {
-                color: '#ffc0cb',
-                tickColor: '#ffc0cb',
+                color: '#9EA2A2',
+                tickColor: '#9EA2A2',
                 drawTicks: true,
               },
               ticks: {
-                backdropColor: '#ffc0cb'
+                backdropColor: '#9EA2A2'
               }
             },
           x: {
             grid: {
-              color: '#ffc0cb'
+              color: '#9EA2A2'
             }
           }
         }
@@ -50,14 +51,14 @@ function chartOptions(team) {
 
 function chartData(team) {
     return {
-        labels: TeamInfo[team].map((data) => `${data.player.first_name}  ${data.player.last_name}`),
+        labels: TeamInfo2[team].players.map((data) => `${data.name}`),
         datasets: [
             {
             label: `Season high scoring vs the ${team}`,
-            data: TeamInfo[team].map((data) => data.pts),
+            data: TeamInfo2[team].players.map((data) => data.pts),
             showLine: false,
-            backgroundColor: 'pink',
-            color: 'green',
+            borderColor: TeamInfo2[team].colors.color1,
+            backgroundColor: TeamInfo2[team].colors.color2
             }
       ]
     }
@@ -69,7 +70,7 @@ const ChartCtn = ({ teams, handleTeams }) => {
           <h1 className="py-5 text-2xl font-bold">Season High Charts</h1>
           <div className="chartCtn w-full">
               {teams.map((team, i) => (
-                  <div key={i} className="p-8 h-80 flex flex-col items-center">
+                  <div key={i} className="p-8 h-96 flex flex-col items-center">
                       <Line
                         className="flex-1 w-64"
                         data={chartData(team)}
