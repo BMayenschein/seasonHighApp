@@ -183,6 +183,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 1629622,
+                "name": "Max Strus",
+                "pts": 27
+            },
+            {
                 "id": 1629659,
                 "name": "Talen Horton-Tucker",
                 "pts": 27
@@ -206,11 +211,6 @@ export const TeamInfo2 =
                 "id": 1630191,
                 "name": "Isaiah Stewart",
                 "pts": 20
-            },
-            {
-                "id": 1629622,
-                "name": "Max Strus",
-                "pts": 27
             },
             {
                 "id": 1631306,
@@ -385,6 +385,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 1628404,
+                "name": "Josh Hart",
+                "pts": 23
+            },
+            {
                 "id": 1630534,
                 "name": "Ochai Agbaji",
                 "pts": 21
@@ -433,11 +438,6 @@ export const TeamInfo2 =
                 "id": 1631323,
                 "name": "Simone Fontecchio",
                 "pts": 24
-            },
-            {
-                "id": 1628404,
-                "name": "Josh Hart",
-                "pts": 23
             },
             {
                 "id": 1641722,
@@ -498,6 +498,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 203458,
+                "name": "Alex Len",
+                "pts": 11
+            },
+            {
                 "id": 1629028,
                 "name": "Deandre Ayton",
                 "pts": 27
@@ -526,11 +531,6 @@ export const TeamInfo2 =
                 "id": 1631117,
                 "name": "Walker Kessler",
                 "pts": 22
-            },
-            {
-                "id": 203458,
-                "name": "Alex Len",
-                "pts": 11
             },
             {
                 "id": 1630544,
@@ -586,14 +586,14 @@ export const TeamInfo2 =
         },
         "players": [
             {
-                "id": 1630217,
-                "name": "Desmond Bane",
-                "pts": 49
-            },
-            {
                 "id": 1627739,
                 "name": "Kris Dunn",
                 "pts": 13
+            },
+            {
+                "id": 1630217,
+                "name": "Desmond Bane",
+                "pts": 49
             },
             {
                 "id": 203924,
@@ -689,6 +689,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 1630231,
+                "name": "KJ Martin",
+                "pts": 15
+            },
+            {
                 "id": 203084,
                 "name": "Harrison Barnes",
                 "pts": 39
@@ -759,11 +764,6 @@ export const TeamInfo2 =
                 "pts": 11
             },
             {
-                "id": 1630231,
-                "name": "KJ Martin",
-                "pts": 15
-            },
-            {
                 "id": 201988,
                 "name": "Patty Mills",
                 "pts": 13
@@ -792,6 +792,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 201569,
+                "name": "Eric Gordon",
+                "pts": 27
+            },
+            {
                 "id": 1628962,
                 "name": "Udoka Azubuike",
                 "pts": 11
@@ -805,11 +810,6 @@ export const TeamInfo2 =
                 "id": 1641926,
                 "name": "Dexter Dennis",
                 "pts": 18
-            },
-            {
-                "id": 201569,
-                "name": "Eric Gordon",
-                "pts": 27
             },
             {
                 "id": 1629060,
@@ -870,11 +870,6 @@ export const TeamInfo2 =
         },
         "players": [
             {
-                "id": 203507,
-                "name": "Giannis Antetokounmpo",
-                "pts": 64
-            },
-            {
                 "id": 1629646,
                 "name": "Charles Bassey",
                 "pts": 10
@@ -903,6 +898,11 @@ export const TeamInfo2 =
                 "id": 1628978,
                 "name": "Donte DiVincenzo",
                 "pts": 38
+            },
+            {
+                "id": 203507,
+                "name": "Giannis Antetokounmpo",
+                "pts": 64
             },
             {
                 "id": 1630201,
@@ -940,15 +940,15 @@ export const TeamInfo2 =
                 "pts": 16
             },
             {
+                "id": 1631109,
+                "name": "Mark Williams",
+                "pts": 27
+            },
+            {
                 "id": 1630611,
                 "name": "Gui Santos",
                 "pts": 13
             },
-            {
-                "id": 1631109,
-                "name": "Mark Williams",
-                "pts": 27
-            }
         ]
     },
     "LA Clippers": {
@@ -1021,6 +1021,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 203914,
+                "name": "Gary Harris",
+                "pts": 17
+            },
+            {
                 "id": 1631103,
                 "name": "Malaki Branham",
                 "pts": 19
@@ -1034,11 +1039,6 @@ export const TeamInfo2 =
                 "id": 203095,
                 "name": "Evan Fournier",
                 "pts": 13
-            },
-            {
-                "id": 203914,
-                "name": "Gary Harris",
-                "pts": 17
             },
             {
                 "id": 1630573,
@@ -1381,6 +1381,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 1629630,
+                "name": "Ja Morant",
+                "pts": 34
+            },
+            {
                 "id": 1631128,
                 "name": "Christian Braun",
                 "pts": 25
@@ -1414,11 +1419,6 @@ export const TeamInfo2 =
                 "id": 1630541,
                 "name": "Moses Moody",
                 "pts": 21
-            },
-            {
-                "id": 1629630,
-                "name": "Ja Morant",
-                "pts": 34
             },
             {
                 "id": 1630205,
@@ -1638,6 +1638,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 201143,
+                "name": "Al Horford",
+                "pts": 20
+            },
+            {
                 "id": 1631116,
                 "name": "Patrick Baldwin Jr.",
                 "pts": 10
@@ -1646,11 +1651,6 @@ export const TeamInfo2 =
                 "id": 1628976,
                 "name": "Wendell Carter Jr.",
                 "pts": 25
-            },
-            {
-                "id": 201143,
-                "name": "Al Horford",
-                "pts": 20
             },
             {
                 "id": 1631170,
@@ -1690,6 +1690,11 @@ export const TeamInfo2 =
             "color2": "#e56020"
         },
         "players": [
+            {
+                "id": 1631200,
+                "name": "Kris Murray",
+                "pts": 13
+            },
             {
                 "id": 1628973,
                 "name": "Jalen Brunson",
@@ -1734,11 +1739,6 @@ export const TeamInfo2 =
                 "id": 1628374,
                 "name": "Lauri Markkanen",
                 "pts": 38
-            },
-            {
-                "id": 1631200,
-                "name": "Kris Murray",
-                "pts": 13
             },
             {
                 "id": 1629614,
@@ -1847,6 +1847,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 1631093,
+                "name": "Jaden Ivey",
+                "pts": 37
+            },
+            {
                 "id": 1631094,
                 "name": "Paolo Banchero",
                 "pts": 43
@@ -1875,11 +1880,6 @@ export const TeamInfo2 =
                 "id": 1641707,
                 "name": "Taylor Hendricks",
                 "pts": 12
-            },
-            {
-                "id": 1631093,
-                "name": "Jaden Ivey",
-                "pts": 37
             },
             {
                 "id": 1630529,
@@ -2106,6 +2106,11 @@ export const TeamInfo2 =
         },
         "players": [
             {
+                "id": 1630178,
+                "name": "Tyrese Maxey",
+                "pts": 51
+            },
+            {
                 "id": 1630173,
                 "name": "Precious Achiuwa",
                 "pts": 18
@@ -2159,11 +2164,6 @@ export const TeamInfo2 =
                 "id": 1631254,
                 "name": "Kenneth Lofton Jr.",
                 "pts": 12
-            },
-            {
-                "id": 1630178,
-                "name": "Tyrese Maxey",
-                "pts": 51
             },
             {
                 "id": 203468,
