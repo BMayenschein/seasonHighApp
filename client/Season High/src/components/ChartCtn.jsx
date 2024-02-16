@@ -22,6 +22,9 @@ function chartOptions(team) {
             pointStyle: TeamInfo2[team].players.map((data) => {
               const pointImage = new Image(85, 60);
               pointImage.src = `https://cdn.nba.com/headshots/nba/latest/1040x760/${data.id}.png`
+              pointImage.onerror = function() {
+                pointImage.src = "https://cdn.nba.com/headshots/nba/latest/1040x760/fallback.png"
+              }
               return pointImage
             })
           }
