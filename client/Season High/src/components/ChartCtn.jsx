@@ -40,7 +40,8 @@ function chartOptions(team) {
                 drawTicks: true,
               },
               ticks: {
-                backdropColor: '#9EA2A2'
+                backdropColor: '#9EA2A2',
+                padding: 10
               }
             },
           x: {
