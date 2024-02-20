@@ -33,7 +33,7 @@ const TeamsList = ({ handleTeams, teams }) => {
     "Washington Wizards"
   ]
     return (
-      <ul className="w-1/6 menu menu-lg bg-base-200 w-56 rounded-box">
+      <ul className="w-1/6 menu menu-lg bg-base-200 w-56">
         <li className="menu-title">Select Teams</li>
         {teamNames.map((team, i) => 
           <li key={i} >
