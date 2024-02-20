@@ -14,9 +14,11 @@ import { Data } from '../utils/Data'
 import { LineChart } from './components/LineChart';
 
 
-import Header from './components/Head'
+import About from './components/About'
 import TeamsList from './components/TeamsList'
 import ChartCtn from './components/ChartCtn'
+import Footer from './components/Footer'
+
 
 
 ChartJS.register(
@@ -44,10 +46,12 @@ function App() {
 
   return (
     <>
-      {/* <Header /> */}
-      <div className="flex flex-row">
+      <div className="flex flex-row pb-1">
         <TeamsList handleTeams={ handleTeams } teams={ teams } />
-        <ChartCtn handleTeams={ handleTeams } teams={ teams } />
+        <div className="w-5/6">
+          <About />
+          <ChartCtn handleTeams={ handleTeams } teams={ teams } />
+        </div>
       </div>
     </>
   )
