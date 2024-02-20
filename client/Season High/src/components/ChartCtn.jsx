@@ -69,17 +69,16 @@ function chartData(team) {
 
 const ChartCtn = ({ teams, handleTeams }) => {
     return (
-        <div className="w-5/6 flex flex-col items-center">
-          <h1 className="py-5 text-2xl font-bold">Season High Charts</h1>
+        <div className="flex flex-col items-center">
           <div className="chartCtn w-full">
               {teams.map((team, i) => (
                   <div key={i} className="p-8 h-96 flex flex-col items-center">
                       <Line
-                        className="flex-1 w-64"
+                        className="w-64"
                         data={chartData(team)}
                         options={chartOptions(team)}
                       />
-                      <button onClick={ (e) => handleTeams(team) } className="btn">Remove {team}</button>
+                      <button onClick={ (e) => handleTeams(team) } className="btn my-5">Remove {team}</button>
                   </div>
               ))}
           </div>
