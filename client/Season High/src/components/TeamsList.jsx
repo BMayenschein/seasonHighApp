@@ -1,4 +1,3 @@
-
 const TeamsList = ({ handleTeams, teams }) => {
   const teamNames = [
     "Atlanta Hawks", 
@@ -33,15 +32,21 @@ const TeamsList = ({ handleTeams, teams }) => {
     "Washington Wizards"
   ]
     return (
-      <ul className="w-1/6 menu menu-lg bg-base-200 w-56">
-        <li className="menu-title">Select Teams</li>
-        {teamNames.map((team, i) => 
-          <li key={i} >
-            <a onClick={(e) => handleTeams(team)}>
-              {team}
-            </a>
-          </li>
-        )}
+      <ul className="menu menu-horizontal text-center self-center xl:w-1/6 xl:menu-lg">
+        <li className="w-full">
+          <details open>
+            <summary>Select Teams</summary>
+            <ul>
+              {teamNames.map((team, i) => 
+                <li key={i} >
+                  <a onClick={(e) => handleTeams(team)}>
+                    {team}
+                  </a>
+                </li>
+              )}
+            </ul>
+          </details>
+        </li>
       </ul>
     )
   }
