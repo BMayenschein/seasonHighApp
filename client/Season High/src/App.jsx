@@ -46,10 +46,10 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-row pb-1">
+      <div className="flex flex-col justify-center pb-1">
+        <About />
         <TeamsList handleTeams={ handleTeams } teams={ teams } />
-        <div className="w-5/6">
-          <About />
+        <div className="w-full">
           <ChartCtn handleTeams={ handleTeams } teams={ teams } />
         </div>
       </div>
