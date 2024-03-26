@@ -20,10 +20,10 @@ function chartOptions(team) {
           point: {
             radius: 15,
             pointStyle: TeamInfo2[team].players.map((data) => {
-              const pointImage = new Image(85, 60);
-              pointImage.src = `https://cdn.nba.com/headshots/nba/latest/1040x760/${data.id}.png`
+              const pointImage = new Image(65, 47.5);
+              pointImage.src = `https://cdn.nba.com/headshots/nba/latest/260x190/${data.id}.png`
               pointImage.onerror = function() {
-                pointImage.src = "https://cdn.nba.com/headshots/nba/latest/1040x760/fallback.png"
+                pointImage.src = "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png"
               }
               return pointImage
             })
