@@ -73,13 +73,13 @@ const ChartCtn = ({ teams, handleTeams }) => {
         <div className="flex flex-col items-center">
           <div className="chartCtn w-full">
               {teams.map((team, i) => (
-                  <div key={i} className="p-8 h-96 flex flex-col items-center">
+                  <div key={i} className="py-8 h-96 flex flex-col items-center">
                       <Line
                         className="w-64"
                         data={chartData(team)}
                         options={chartOptions(team)}
                       />
-                      <button onClick={ (e) => handleTeams(team) } className="btn my-5">Remove {team}</button>
+                      <button onClick={ (e) => handleTeams(team) } className="btn bg-secondary">Remove {team}</button>
                   </div>
               ))}
           </div>
