@@ -33,7 +33,7 @@ const TeamsList = ({ handleTeams, teams }) => {
   ]
     return (
       <ul className="menu menu-horizontal text-center self-center xl:w-1/6 xl:menu-lg">
-        <li className="w-full">
+        <li className="w-full bg-secondary">
           <details open>
             <summary>Select Teams</summary>
             <ul>
