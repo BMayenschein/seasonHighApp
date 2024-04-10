@@ -6,10 +6,9 @@ See which players have scored a season high versus your favorite team.
 
 ## Description
 
-Some time it feels like your favorite team is constantly getting destroyed by random NBA players. This app takes NBA scoring data from [nba-api](https://github.com/swar/nba_api) and the highest scoring game for each player is grabbed and plotted to a chart.
+This app takes NBA scoring data from [nba-api](https://github.com/swar/nba_api). A chart for each team is built and players who have had a season high scoring against that team are plotted.
 
-## Getting Started
 
-### Dependencies
+### Built With
 
-Chart.js, react, vite, tailwindcss, daisyui
+NodeJS, React + Vite, Tailwindcss w/ DaisyUI.
